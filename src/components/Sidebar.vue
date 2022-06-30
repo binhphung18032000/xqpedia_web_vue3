@@ -14,12 +14,12 @@
     >
       <div class="flex items-center justify-center mt-8">
         <div class="flex items-center">
-          <nuxt-link to="/" class="flex content-center">
+          <router-link to="/" class="flex content-center">
             <img src="/icon.svg" class="w-10" alt="XQPedia" />
             <span class="text-white text-2xl mx-2 my-auto font-semibold"
               >XQPEDIA</span
             >
-          </nuxt-link>
+          </router-link>
         </div>
       </div>
 
@@ -34,52 +34,52 @@
           <span class="mx-2">Cờ thế</span>
         </a>
 
-        <nuxt-link
+        <router-link
           class="flex items-center mt-1 lg:mt-4 py-2 px-6 border-l-4"
           :class="[$route.name === 'rush' ? activeClass : inactiveClass]"
           to="/toc-chien"
         >
           <img src="/images/flash.svg" class="w-8" alt="Vô địch xóm" />
           <span class="mx-2">Tốc chiến</span>
-        </nuxt-link>
+        </router-link>
 
         <p class="mt-1 lg:mt-4 py-2 px-8 text-gray-200 text-sm">Thách đấu</p>
 
-        <nuxt-link
+        <router-link
           class="flex items-center mt-1 lg:mt-4 py-2 px-6 border-l-4"
           :class="[$route.name === 'beginner' ? activeClass : inactiveClass]"
           to="/xom"
         >
           <img src="/images/ama.svg" class="w-8" alt="Vô địch xóm" />
           <span class="mx-2">Vô địch xóm</span>
-        </nuxt-link>
+        </router-link>
 
-        <nuxt-link
+        <router-link
           class="flex items-center mt-1 lg:mt-4 py-2 px-6 border-l-4"
           :class="[$route.name === 'semi' ? activeClass : inactiveClass]"
           to="/huyen"
         >
           <img src="/images/semi.svg" class="w-8" alt="Vô địch huyện" />
           <span class="mx-2">Vô địch huyện</span>
-        </nuxt-link>
+        </router-link>
 
-        <nuxt-link
+        <router-link
           class="flex items-center mt-1 lg:mt-4 py-2 px-6 border-l-4"
           :class="[$route.name === 'pro' ? activeClass : inactiveClass]"
           to="/tinh"
         >
           <img src="/images/pro.svg" class="w-8" alt="Vô địch tỉnh" />
           <span class="mx-2">Vô địch tỉnh</span>
-        </nuxt-link>
+        </router-link>
 
-        <nuxt-link
+        <router-link
           class="flex items-center mt-1 lg:mt-4 py-2 px-6 border-l-4"
           :class="[$route.name === 'master' ? activeClass : inactiveClass]"
           to="/doc-co-cau-bai"
         >
           <img src="/images/master.svg" class="w-8" alt="Độc cô cầu bại" />
           <span class="mx-2">Đại sư</span>
-        </nuxt-link>
+        </router-link>
 
         <p class="mt-1 lg:mt-4 py-2 px-8 text-gray-200 text-sm">Cập nhật</p>
         <a
@@ -102,7 +102,7 @@
 
         <div class="hidden">
           <p class="mt-4 py-2 px-8 text-gray-200 text-sm">Template</p>
-          <nuxt-link
+          <router-link
             class="flex items-center mt-4 py-2 px-6 border-l-4"
             :class="[$route.name === 'Dashboard' ? activeClass : inactiveClass]"
             to="/dashboard"
@@ -124,9 +124,9 @@
             </svg>
 
             <span class="mx-4">Dashboard</span>
-          </nuxt-link>
+          </router-link>
 
-          <nuxt-link
+          <router-link
             class="flex items-center mt-4 py-2 px-6 border-l-4"
             :class="[
               $route.name === 'UIElements' ? activeClass : inactiveClass,
@@ -158,9 +158,9 @@
             </svg>
 
             <span class="mx-4">UI Elements</span>
-          </nuxt-link>
+          </router-link>
 
-          <nuxt-link
+          <router-link
             class="flex items-center mt-4 py-2 px-6 border-l-4"
             :class="[$route.name === 'Tables' ? activeClass : inactiveClass]"
             to="/tables"
@@ -186,9 +186,9 @@
             </svg>
 
             <span class="mx-4">Tables</span>
-          </nuxt-link>
+          </router-link>
 
-          <nuxt-link
+          <router-link
             class="flex items-center mt-4 py-2 px-6 border-l-4"
             :class="[$route.name === 'Forms' ? activeClass : inactiveClass]"
             to="/forms"
@@ -205,9 +205,9 @@
             </svg>
 
             <span class="mx-4">Forms</span>
-          </nuxt-link>
+          </router-link>
 
-          <nuxt-link
+          <router-link
             class="flex items-center mt-4 py-2 px-6 border-l-4"
             :class="[$route.name === 'Cards' ? activeClass : inactiveClass]"
             to="/cards"
@@ -224,9 +224,9 @@
             </svg>
 
             <span class="mx-4">Cards</span>
-          </nuxt-link>
+          </router-link>
 
-          <nuxt-link
+          <router-link
             class="flex items-center mt-4 py-2 px-6 border-l-4"
             :class="[$route.name === 'Modal' ? activeClass : inactiveClass]"
             to="/modal"
@@ -238,9 +238,9 @@
             </svg>
 
             <span class="mx-4">Modal</span>
-          </nuxt-link>
+          </router-link>
 
-          <nuxt-link
+          <router-link
             class="flex items-center mt-4 py-2 px-6 border-l-4"
             :class="[$route.name === 'Blank' ? activeClass : inactiveClass]"
             to="/blank"
@@ -252,7 +252,7 @@
             </svg>
 
             <span class="mx-4">Blank</span>
-          </nuxt-link>
+          </router-link>
         </div>
       </nav>
 
@@ -288,7 +288,7 @@
 </template>
 
 <script>
-import Account from "./Account.vue";
+// import Account from "./Account.vue";
 
 export default {
   data() {
@@ -300,27 +300,27 @@ export default {
         "border-gray-900 text-gray-400 hover:bg-gray-600 hover:bg-opacity-25 hover:text-white",
     };
   },
-  components: { Account },
-  computed: {
-    isOpen() {
-      return this.$store.getters["menuIsOpen"];
-    },
-    isLoadingPuzzle() {
-      return this.$store.getters["puzzle/isLoadingPuzzle"];
-    },
-    nextPuzzle() {
-      return this.$store.getters["puzzle/nextPuzzle"];
-    },
-    currentPuzzle() {
-      return this.$store.getters["puzzle/currentPuzzle"];
-    },
-    code() {
-      return this.$store.getters["account/code"];
-    },
-    name() {
-      return this.$store.getters["account/name"];
-    },
-  },
+  // components: { Account },
+  // computed: {
+  //   isOpen() {
+  //     return this.$store.getters["menuIsOpen"];
+  //   },
+  //   isLoadingPuzzle() {
+  //     return this.$store.getters["puzzle/isLoadingPuzzle"];
+  //   },
+  //   nextPuzzle() {
+  //     return this.$store.getters["puzzle/nextPuzzle"];
+  //   },
+  //   currentPuzzle() {
+  //     return this.$store.getters["puzzle/currentPuzzle"];
+  //   },
+  //   code() {
+  //     return this.$store.getters["account/code"];
+  //   },
+  //   name() {
+  //     return this.$store.getters["account/name"];
+  //   },
+  // },
   methods: {
     startPuzzle() {
       if (this.$route.name !== "practice") {
