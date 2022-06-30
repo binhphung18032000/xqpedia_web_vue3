@@ -21,13 +21,13 @@
               </a>
             </div>
             <div class="w-1/2">
-              <nuxt-link
+              <route-link
                 to="/toc-chien"
                 class="block hover:bg-gray-900 rounded-md p-4"
               >
                 <img src="/images/flash.svg" class="block" alt="Cờ thế" />
                 <p class="mt-2 font-semibold text-lg">Tốc chiến</p>
-              </nuxt-link>
+              </route-link>
             </div>
           </div>
         </div>
@@ -41,37 +41,37 @@
       <p class="text-xl uppercase">Khiêu chiến</p>
       <div class="flex flex-wrap mt-5 max-w-3xl mx-auto">
         <div class="w-1/2 md:w-1/4">
-          <nuxt-link to="/xom" class="block hover:bg-gray-700 rounded-md p-4">
+          <route-link to="/xom" class="block hover:bg-gray-700 rounded-md p-4">
             <img
               src="/images/ama.svg"
               class="block max-w-xs"
               alt="Vô địch xóm"
             />
             <p class="mt-2 font-semibold text-lg">Vô địch xóm</p>
-          </nuxt-link>
+          </route-link>
         </div>
         <div class="w-1/2 md:w-1/4">
-          <nuxt-link to="/huyen" class="block hover:bg-gray-700 rounded-md p-4">
+          <route-link to="/huyen" class="block hover:bg-gray-700 rounded-md p-4">
             <img
               src="/images/semi.svg"
               class="block max-w-xs"
               alt="Vô địch huyện"
             />
             <p class="mt-2 font-semibold text-lg">Vô địch huyện</p>
-          </nuxt-link>
+          </route-link>
         </div>
         <div class="w-1/2 md:w-1/4">
-          <nuxt-link to="/tinh" class="block hover:bg-gray-700 rounded-md p-4">
+          <route-link to="/tinh" class="block hover:bg-gray-700 rounded-md p-4">
             <img
               src="/images/pro.svg"
               class="block max-w-xs"
               alt="Vô địch tỉnh"
             />
             <p class="mt-2 font-semibold text-lg">Vô địch tỉnh</p>
-          </nuxt-link>
+          </route-link>
         </div>
         <div class="w-1/2 md:w-1/4">
-          <nuxt-link
+          <route-link
             to="/doc-co-cau-bai"
             class="block hover:bg-gray-700 rounded-md p-4"
           >
@@ -81,7 +81,7 @@
               alt="Độc cô cầu bại"
             />
             <p class="mt-2 font-semibold text-lg">Độc cô cầu bại</p>
-          </nuxt-link>
+          </route-link>
         </div>
       </div>
     </div>
