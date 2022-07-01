@@ -25,7 +25,7 @@
                 to="/toc-chien"
                 class="block hover:bg-gray-900 rounded-md p-4"
               >
-                <img src="/images/flash.svg" class="block" alt="Cờ thế" />
+                <img src="/images/flash.svg" class="block" alt="Tốc chiến" />
                 <p class="mt-2 font-semibold text-lg">Tốc chiến</p>
               </route-link>
             </div>
@@ -51,7 +51,10 @@
           </route-link>
         </div>
         <div class="w-1/2 md:w-1/4">
-          <route-link to="/huyen" class="block hover:bg-gray-700 rounded-md p-4">
+          <route-link
+            to="/huyen"
+            class="block hover:bg-gray-700 rounded-md p-4"
+          >
             <img
               src="/images/semi.svg"
               class="block max-w-xs"

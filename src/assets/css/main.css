@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap");
+
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+/* @import '@/assets/css/custom.scss'; */
+
+.background{
+  background: url("/public/images/bg.jpg") repeat;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track{
+  background: #2D3748;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #CBD5E0;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #718096;
+}
+
+
+/* CHESS BOARD STYLE */
+#board {
+  display: inline-block;
+  position: relative;
+  background: #DCC7AA url('/public/res/wood.png') repeat;
+  border: 1px solid #777;
+  box-shadow: rgba(0, 0, 0, 0.3) 0.5px 1px 2px;
+  overflow: hidden;
+}
+
+#board table td.diagtb {
+  background: linear-gradient(to top right, transparent calc(50% - 0.75px), #000, transparent calc(50% + 0.75px) )
+}
+#board table td.diagbt {
+  background: linear-gradient(to bottom right, transparent calc(50% - 0.75px), #000, transparent calc(50% + 0.75px) )
+}
+
+.sbl-circ-ripple {
+  height: 24px;
+  width: 24px;
+  color: #5a5a5a;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block; }
+.sbl-circ-ripple::after, .sbl-circ-ripple::before {
+  content: '';
+  height: 0;
+  width: 0;
+  border: inherit;
+  border: 3px solid;
+  border-radius: inherit;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  animation: circle-ripple  1s linear infinite; }
+.sbl-circ-ripple::before {
+  animation-delay: -0.5s; }
+
+@keyframes circle-ripple {
+  0% {
+    height: 0;
+    width: 0;
+    left: 12px;
+    top: 12px; }
+  100% {
+    height: 24px;
+    width: 24px;
+    left: 0px;
+    top: 0px;
+    opacity: 0; }
+}
+
+/* END CHESS BOARD STYLE */

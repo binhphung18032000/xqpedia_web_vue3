@@ -1,25 +1,13 @@
 <template>
-  <Sidebar />
-  <router-view />
+  <DefaultLayout />
 </template>
 
 <script>
-import Sidebar from "./components/Sidebar.vue";
+import DefaultLayout from "./layouts/default";
 export default {
   name: "App",
   components: {
-    Sidebar,
+    DefaultLayout,
   },
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
